@@ -1,0 +1,13 @@
+section.blackjack {
+  background-image: url("../images/bg-money.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.construccion {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+}

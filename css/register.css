@@ -1,0 +1,21 @@
+.register {
+  justify-content: center;
+}
+
+section.register {
+  background-image: url("../images/casino-register.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+.form-container {
+  width: 350px;
+}

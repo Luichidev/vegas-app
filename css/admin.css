@@ -1,0 +1,44 @@
+.admin-container {
+  max-width: 1024px;
+  min-width: 350px;
+  margin: 18px auto;
+}
+
+.admin-container table {
+  text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+
+.admin-container form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.admin-container input {
+  padding: 8px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.admin-container thead th {
+  background-color: var(--secondColor);
+  color: #fff;
+}
+
+.admin-container tbody tr:nth-of-type(odd) {
+  background-color: #f0deb4;
+}
+
+.admin-container tbody tr:nth-of-type(even) {
+  background-color: #fdf9ee;
+}
+
+.admin-container thead th {
+  padding: 4px;
+}
+
+.admin-container tbody td {
+  padding: 8px;
+}

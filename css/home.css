@@ -1,0 +1,7 @@
+section.home {
+  background-image: url("../images/casino-home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
