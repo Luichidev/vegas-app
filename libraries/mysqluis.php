@@ -36,10 +36,6 @@ class mysqluis {
     return $res;
   }
 
-  private function sql_injection_protection($string){
-    return mysqli_real_escape_string($this->dblink, $string);
-  }
-
   /**
    * Funciones Públicas
    */
@@ -59,8 +55,6 @@ class mysqluis {
       $sql .= " FROM {$table}";
 
     }
-    //protección sql
-    $sql = $this->sql_injection_protection($sql);
     return $this->get_data($sql);
   }
 
@@ -77,8 +71,6 @@ class mysqluis {
       $sql = substr($sql, 0, -1); // quitamos la última coma
       $sql .= " FROM {$table} WHERE {$col}=$id";
     }
-    //protección sql
-    $sql = $this->sql_injection_protection($sql);
     return $this->get_data($sql);
   }
 
@@ -102,8 +94,6 @@ class mysqluis {
       $col .= " ) VALUES ";
       $val .= " )";
       $sql .= $col . $val;
-      //protección sql
-      $sql = $this->sql_injection_protection($sql);
       $res = $this->send_data($sql);
     } 
     return $res;
@@ -124,8 +114,6 @@ class mysqluis {
       if(is_numeric($id)) $sql .= " WHERE {$colUpdate}={$id}";
       else $sql .= " WHERE {$colUpdate}='{$id}'";
       if($id){
-        //protección sql
-        $sql = $this->sql_injection_protection($sql);
         $res = $this->send_data($sql);
       }
     } 
