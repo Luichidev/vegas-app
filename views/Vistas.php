@@ -99,6 +99,13 @@ class Vistas {
                     "</div>" . (!empty($_SESSION["error_msg"])? $_SESSION["error_msg"] : "") . "</form>".PHP_EOL.
                 "</div>".PHP_EOL.
               "</section>".PHP_EOL.
+              "<section class=\"flex-container movile-login\" hidden>".PHP_EOL.
+                "<div>
+                  <img src=\"images/casino-logo.png\">
+                  <h3>Actualmente el casino solo está disponible para PC.</h3>
+                </div>". PHP_EOL.
+              "</section>".PHP_EOL.
+
             "</body>";
     $res .= $this->footer();
     echo $res;

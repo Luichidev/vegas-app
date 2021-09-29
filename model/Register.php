@@ -4,6 +4,7 @@ class Register extends Model {
   static function add_user(){
     $Vista = new Vistas();
     parent::connect();
+    $_SESSION["error_msg"] = "";
     
     if($_SERVER["REQUEST_METHOD"] === "POST"){
       if(isset($_POST["register"])){
@@ -13,7 +14,6 @@ class Register extends Model {
         $pass = "";
         $error = false;
         $_SESSION["msg"] = "";
-        $_SESSION["error_msg"] = "";
 
         if(isset($_POST["invite"])){
           $codigo = parent::sanitize($_POST["invite"]);
