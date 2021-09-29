@@ -174,8 +174,23 @@ li.text {
   color: var(--bc);
   font-weight: 900;
 }
-@media screen and (min-width: 464px) {
-  .flex-container {
+/* @media screen and (max-width: 767px) { */
+@media screen and (max-width: 1063px) {
+  section.movile-login {
     justify-content: center;
+    height: 100vh;
+  }
+  section.login {
+    display: none;
+  }
+
+  .movile-login div {
+    padding: 1rem;
+    border-radius: 0.25rem;
+  }
+
+  .movile-login div h3 {
+    color: var(--bc);
+    text-align: center;
   }
 }
